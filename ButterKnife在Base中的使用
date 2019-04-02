@@ -1,0 +1,29 @@
+添加 ButterKnife.bind(this); 方法到BaseActivity中
+在BaseActivity中重写setContentView的三个方法，并在每个方法中初始化ButterKnife。
+
+ @Override
+    public void setContentView(View view)
+    {
+        super.setContentView(view);
+        ButterKnife.bind(this);
+
+    }
+
+    @Override
+    public void setContentView(int layoutResID)
+    {
+        super.setContentView(layoutResID);
+        ButterKnife.bind(this);
+
+    }
+
+    @Override
+    public void setContentView(View view, ViewGroup.LayoutParams params)
+    {
+        super.setContentView(view, params);
+        ButterKnife.bind(this);
+
+    }
+    
+    
+    
