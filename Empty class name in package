@@ -1,0 +1,13 @@
+What is the cause of “Empty class name in package” while install app on Android 9.0 emulator?
+
+For someone stumbling here, I had the same problem when app was not installing in Android 9.0
+
+The problem was android:appComponentFactory="" (it is empty in the merged manifest as shown in line #68) and failing to install on Android 9.0 (works fine below Pie)
+
+The solution was to remove appComponentFactory from tools:replace="icon,theme,appComponentFactory"
+
+If it still fails, try migrating to androidx. However above solution worked for me.
+
+https://stackoverflow.com/questions/54445663/what-is-the-cause-of-empty-class-name-in-package-while-install-app-on-android
+
+
