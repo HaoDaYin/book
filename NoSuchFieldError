@@ -5,3 +5,5 @@ Java.lang.NoSuchFieldError: No static field xxx of type I in class Lcom/XX/R$id;
 2、这里有提示R$id的问题，那你看看是不是引用了多个库，而有同名的layout布局
 
 解决：在报错的对应的class中的布局layout名字重新命名
+
+https://blog.csdn.net/qq_30552993/article/details/74003966
