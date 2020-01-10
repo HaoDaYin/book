@@ -1,0 +1,7 @@
+Android super
+android中较为常用的是子类（MainActivity）覆写了父类（AppCompatActivity）的onCreate(Bundle savedInstanceState)方法，
+然后再在首行写上super.onCreate(savedInstanceState);表示以当前的savedInstanceState为参数去调用父类的oncreate()来初始化，
+然后自己在覆写的oncreate()方法中写自己的逻辑。
+
+Android 中较为常用的是子类MainActivity 覆写了父类的onCreate方法，然后在首行写上super.onCreate;表示以当前的savedInstanceState为参数去调用父类的onCreate
+来初始化，然后自己在覆写的onCreate方法中写自己的逻辑
